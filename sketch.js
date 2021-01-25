@@ -6,6 +6,7 @@ var engine, world;
 var box1, box2, box3, box4, box5;
 var pig1, pig2;
 var log1, log3, log4, log5;
+var bird;
 
 
 function setup(){
@@ -30,6 +31,7 @@ function setup(){
     log4 = new Log(760,120, 150,PI/7);// when forwards, positive angle value
     log5 = new Log(870,120, 150,-PI/7);// when backwards, negative angle value 
 
+    bird=new Bird(100,100);
  
 }
 
@@ -54,6 +56,7 @@ function draw(){
     log4.display();
     log5.display();
 
+    bird.display();
 
 
 }
